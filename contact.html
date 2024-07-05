@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jithesh Kuyyalil</title>
+    <style>
+        /*https://www.canva.com/design/DAF_dGQaxTo/qgLhPsc8Z0ib2y9txeOXHQ/view?utm_content=DAF_dGQaxTo&utm_campaign=designshare&utm_medium=link&utm_source=editor */
+        html {
+            /* background-image: url(./images/autumn-suhyung798.jpg); */
+            background: rgb(255, 255, 255);
+        } 
+        /* front page logic */
+        /* full width */
+        .contact-page-flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .contact-page {
+            display: grid;
+            grid-template-rows: 0.5fr 0.5fr 0.2fr;
+            grid-template-columns: 1fr;
+            width: 65rem;
+            height: 37rem;
+            background-color: rgb(60, 94, 71);
+        }
+
+        .contact-heading {
+            grid-area: 1 / 1 / 2 / 2;
+            background-color: rgb(94, 80, 60);
+            display: flex;
+            justify-content: center;
+        }
+
+        .contact-heading-for-flex {
+            width: 25rem;
+        }
+
+        .contact-heading p {
+            display: flex;
+            justify-content: left;
+            color: rgb(252, 195, 110);
+            font-size: 3.2rem;
+            font-family: "Alegreya", serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;             
+            margin-top: 8rem;
+            margin-bottom: 0;
+        }
+
+        .contact-email {
+            grid-area: 2 / 1 / 3 / 2;   
+            background-color: rgb(94, 80, 60); 
+            display: flex;
+            justify-content: center;
+        }
+
+        .contact-email-for-flex {
+            width: 25rem;
+        }
+
+        .contact-email p {
+            display: flex;
+            justify-content: left;
+            color: rgb(172, 182, 144);
+            font-size: 1.7rem;
+            font-family: "Alegreya", serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            margin-top: 0%;
+            margin-bottom: 0%;
+        }
+
+        .contact-rights {
+            grid-area: 3 / 1 / 4 / 2;
+            background-color: rgb(49, 12, 8);
+            display: flex;
+            justify-content: center;
+        }
+
+        .contact-rights-for-flex {
+            width: 25rem;
+        }
+
+        .contact-rights p {
+            display: flex;
+            justify-content: left;
+            color: rgb(172, 182, 144);
+            font-size: 1.3rem;
+            font-family: "Alegreya", serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal; 
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 450px){
+
+            .contact-page {
+                width: 15rem;
+                height: 30rem;
+                justify-content: center;
+            }
+
+            .contact-heading p {
+                font-size: 2rem;
+                margin-left: 5px;
+            }
+
+            .contact-email p {
+                font-size: 1.2rem;
+                margin-left: 5px;
+            }
+
+            .contact-rights p {
+                font-size: 1rem;
+                margin-left: 5px;
+            }
+
+            .contact-heading-for-flex, .contact-email-for-flex, .contact-rights-for-flex {
+                width: 18rem;
+            }
+
+        }
+            
+        @media (max-width: 300px){
+
+            .contact-page {
+                width: 10rem;
+                height: 30rem;
+                justify-content: center;
+            }
+
+            .contact-heading p {
+                font-size: 1.8rem;
+                margin-left: 5px;
+                padding-top: 10px;
+            }
+
+            .contact-email p {
+                font-size: 0.9rem;
+                margin-left: 5px;
+                margin-top: 5px;
+            }
+
+            .contact-rights p {
+                font-size: 0.7rem;
+                margin-left: 5px;
+            }
+
+            .contact-heading-for-flex, .contact-email-for-flex, .contact-rights-for-flex {
+                width: 14rem;
+            }
+
+        }
+        
+
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contact-page-flex">
+        <!-- <div class="middle-page">
+
+        </div> -->
+        <div class="contact-page">
+            <div class="contact-heading">
+                <div class="contact-heading-for-flex">
+                    <p>
+                        Contact Me
+                    </p>
+                </div>
+            </div>
+            <div class="contact-email">
+                <div class="contact-email-for-flex">
+                    <p>If you would like to work with me, </p>
+                    <p>drop me a line through</p>
+                    <p>email: info@jitheshkuyyalil.com</p>
+                </div>
+            </div>               
+            <div class="contact-rights">
+                <div class="contact-rights-for-flex">
+                    <p>
+                        ©jitheshkuyyalil.com All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

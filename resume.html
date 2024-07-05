@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jithesh Kuyyalil</title>
+    <style>
+        html {
+            color: rgb(255, 255, 255);
+        }
+        /* My styles */
+        .container {
+            width: 800px;
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 2fr;
+            
+        }
+
+        .myflex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .photo {
+            grid-area: 1 / 1 / 2 / 1;
+            background-color: aqua;
+            border-top-left-radius: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+        }
+
+        .photo img {
+            border-radius: 20%;
+            width: 80%;
+        }
+
+        .measure {
+            grid-area: 2 / 1 / 3 / 1 ;
+            background-color: rgb(180, 134, 223);
+        }
+
+        .skills {
+
+            grid-area: 3 / 1 / 8 / 1;
+            background-color: rgb(128, 110, 110);
+            border-bottom-left-radius: 5%;
+        } 
+
+        .name-contact {
+            grid-area: 1 / 2 / 2 / 3;
+            background-color: rgb(219, 109, 219);
+            border-top-right-radius: 10%;
+        }
+        .theater {
+            grid-area: 2 / 2 / 3 / 3;
+            background-color: rgb(134, 134, 202);
+        }
+        .film {
+            grid-area: 3 / 2 / 4 / 3;
+            background-color: rgb(107, 150, 150);
+        }
+
+        .training {
+            grid-area: 4 / 2 / 5 / 3;
+            background-color: rgb(214, 144, 158);
+        }
+
+        .education {
+            grid-area: 5 / 2 / 6 / 3;
+            background-color: violet;
+        }
+
+        .other {
+            grid-area: 6 / 2 / 7 / 3;
+            background-color: rgb(130, 114, 141);
+            border-bottom-right-radius: 10%;
+        }
+
+        tr {
+            text-align: left;
+        }
+
+        body {
+            font-family: "Baskerville", serif;
+        }
+
+        @media (max-width: 525px) {
+
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(9, 1fr);
+            }
+
+            .name-contact {
+                grid-area: 1 / 1 / 2 / 2;
+            }
+
+            .photo {
+                grid-area: 2 / 1 / 3 / 2;
+            }
+
+            .measure {
+                grid-area: 3 / 1 / 4 / 2;
+            }
+
+            .skills {
+                grid-area: 4 / 1 / 5 / 2;
+            }
+
+            .theater {
+                grid-area: 5 / 1 / 6 / 2;
+            }
+
+            .film {
+                grid-area: 6 / 1 / 7 / 2;
+            }
+
+            .training {
+                grid-area: 7 / 1 / 8 / 2;
+            }
+
+            .education {
+                grid-area: 8 / 1 / 9 / 2;
+            }
+
+            .other {
+                grid-area: 9 / 1 / 10 / 2;
+            }
+        }
+    
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="myflex">
+        <div class="container">
+            <div class="memb photo">
+                <!-- <div class="photo-flex"> -->
+                <img src="./images/headshot.jpg" alt="headshot of a person">
+                <!-- </div> -->
+            </div>
+            <div class="memb measure">
+                <h3>MEASUREMENTS</h3>
+                <p>HEIGHT 5'9"</p>
+                <p>SUITE SIZE 34R/30R</p>
+            </div>
+            <div class="memb skills">
+                <h3>SKILLS</h3>
+                <p>
+                    Langauages: English,
+                    Hindi, Malayalam 
+                </p>
+                <p> Sports: 
+                    Inline skating,
+                    Swimming
+                </p>    
+                <p>
+                    Singer: Bollywood, 
+                    English pop songs
+                </p>
+                <p> 
+                    Dance: Bollywood Dance, Break Dance
+                </p>
+            </div>
+            <div class="memb name-contact">
+                <h1>Jithesh Kuyyalil</h1>
+                <p>Ph: 8180008382 email: info@jitheshkuyyalil.com</p>
+                <p>web:  https://jitheshkuyyalil.com</p>
+            </div>
+            <div class="memb theater">
+                <h3>THEATER</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Play</th>
+                            <th scope="col">Role</th>
+                            <th scope="col">Director/Producer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Indian Ink</th>
+                            <td>Nirad Das</td>
+                            <td>Patrick Mulryan</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Buzkill</th>
+                            <td>Tarick</td>
+                            <td>Chris Ostrowski</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Harmonious</th>
+                            <td>Showcase</td>
+                            <td>Tom Todoroff</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="memb film">
+                <h3>FILM</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Movie/Short film</th>
+                                <th scope="col">Role</th>
+                                <th scope="col">Director/Producer</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Bollywood Dreams</th>
+                                <td>Arun</td>
+                                <td>Megan Smith</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Buzkill</th>
+                                <td>Tarick</td>
+                                <td>Chris Ostrowski</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Dark Angels</th>
+                                <td>Jack</td>
+                                <td>Jithesh Kuyyalil</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">A Timely Affair</th>
+                                <td>Boris Trigorin</td>
+                                <td>Lourenco Almeida, Megan Smith</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Dreamers</th>
+                                <td>Scientist</td>
+                                <td>Joe Dwyer</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+            <div class="memb training">
+                <h3>TRAINING</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Skill/Course</th>
+                            <th scope="col">Instructor</th>
+                        </tr>
+                        <tr>
+                            <td>Monologue/Crime & Punishment</td>
+                            <td>Tom Todoroff One Day Intensive</td>
+                        </tr>
+                        <tr>
+                            <td>Scene Study</td>
+                            <td>Stephen Henderson</td>
+                        </tr>
+                        <tr>
+                            <td>Shakespeare</td>
+                            <td>Andrew Wade</td>
+                        </tr>
+                        <tr>
+                            <td>Voice & Speech</td>
+                            <td>Julia Lenardon</td>
+                        </tr>
+                        <tr>
+                            <td>Movement</td>
+                            <td>Janice Orlandi, Frantic Assembley Workshop,
+                            Jean-Claude van Itallie</td>
+                        </tr>
+                        <tr>
+                            <td>Improv</td>
+                            <td>Paul Urcioli, Josh Lewis</td>
+                        </tr>
+                        <tr>
+                            <td>Voice Over</td>
+                            <td>Anna Garduno</td>
+                        </tr>
+                        <tr>
+                            <td>Mask</td>
+                            <td>Shelley Wyant</td>
+                        </tr>
+                        <tr>
+                            <td>Voice</td>
+                            <td>Patrick Mullryan</td>
+                        </tr>
+                        <tr>
+                            <td>On-camera Acting</td>
+                            <td>Todd Thaler</td>
+                        </tr>
+                        <tr>
+                            <td>Business of Acting</td>
+                            <td>Mari Lyn Henry</td>
+                        </tr>
+
+                    </thead>
+                </table>
+            </div>
+            <div class="memb education">
+                <h3>EDUCATION</h3>
+                <table>
+                    <tr>
+                        <td>PhD (Physics)</td>
+                        <td>JNCASR, India</td>
+                    </tr>
+                    <tr>
+                        <td>Postdoctoral Research</td>
+                        <td>Boston University (USA), INSA (France)</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="memb other">
+                <h3>OTHERS</h3>
+                <p>Valid Passport, Green Card, Drivers License</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

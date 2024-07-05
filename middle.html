@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jithesh Kuyyalil</title>
+    <style>
+        /*https://www.canva.com/design/DAF_dGQaxTo/qgLhPsc8Z0ib2y9txeOXHQ/view?utm_content=DAF_dGQaxTo&utm_campaign=designshare&utm_medium=link&utm_source=editor */
+        html {
+            /* background-image: url(./images/autumn-suhyung798.jpg); */
+            background: rgb(255, 255, 255);
+        } 
+        /* front page logic */
+        /* full width */
+        .middle-page-flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .middle-page {
+            display: grid;
+            grid-template-columns: 0.11fr 0.5fr 0.5fr 0.11fr;
+            grid-template-rows: 1fr;
+            gap: 20px;
+        }       
+
+        .leaf-middle1 {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+
+        .leaf-middle2 {
+            display: flex;
+            grid-area: 1 / 4 / 2 / 5;
+            align-items: end;
+
+        }
+
+        .skate {
+            grid-area: 1 / 2 / 2 / 3;
+
+        }
+
+        .skate img  {
+            width: 20rem;
+        }
+
+        .leaf-middle1 img {
+            height: 15rem;
+        }
+
+        .leaf-middle2 img {
+            height: 15rem;
+        
+        }
+
+        .middle-text {
+            grid-area: 1 / 3 / 2 / 4;
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 0;
+            color: #8a7524;
+            font-family: "Alegreya", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .middle-text p {
+            width: 30rem;
+        }
+
+        .middle-line1 {
+            width: 20rem;
+            height: 10px;
+            background-color: rgb(197, 163, 140);
+        }
+
+        .middle-line2 {
+            width: 30rem;
+            height: 10px;
+            background-color: rgb(197, 163, 140);
+        }
+        
+        /* middle range  1100*/
+        @media (max-width: 1100px) {
+        /* coming */
+
+            .skate img {
+                width: 15rem;
+            }
+
+            .leaf-middle1 img {
+                height: 12rem;
+            }
+
+            .leaf-middle2 img {
+                height: 12rem;
+            
+            }
+
+            .middle-text {
+                grid-area: 1 / 3 / 2 / 4;
+                font-size: 1.28rem;
+                margin-top: 0;
+                margin-bottom: 0;
+                color: #8a7524;
+                font-family: "Alegreya", serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            .middle-text p {
+                width: 25rem;
+            }
+
+            .middle-line1 {
+                width: 15rem;
+                height: 10px;
+                background-color: rgb(197, 163, 140);
+            }
+
+            .middle-line2 {
+                width: 25rem;
+                height: 10px;
+                background-color: rgb(197, 163, 140);
+            }
+
+        }
+
+        /* 768 1350 */
+        @media  (max-width: 768px) {
+
+            .middle-page-flex {
+                height: auto;
+            }
+
+            .middle-page {
+                display: grid;
+                grid-template-rows: 0.11fr 0.05fr 0.5fr 0.5fr  0.05fr 0.11fr;
+                grid-template-columns: 1fr;
+                gap: 0px;
+            }       
+
+            .leaf-middle1 {
+                display: flex;
+                justify-content: center;
+                grid-area: 1 / 1 / 2 / 2;
+            }
+
+            .leaf-middle2 {
+                display: flex;
+                grid-area: 6 / 1 / 7 / 2;
+                justify-content: center;
+
+            }
+
+            .skate {
+                display: flex;
+                grid-area: 3 / 1 / 4 / 2;
+                justify-content: center;
+
+            }
+
+            .skate img {
+                width: 15rem;
+                border-radius: 5%;
+                margin-top: 15px;
+                margin-bottom: 20px;
+            }
+
+            .leaf-middle1 img {
+                height: 12rem;
+            }
+
+            .leaf-middle2 img {
+                height: 12rem;
+            }
+
+            .middle-text {
+                text-align: center;
+                grid-area: 4 / 1 / 5 / 2;
+                font-size: 1.28rem;
+                margin-top: 0;
+                margin-bottom: 0;
+                color: #8a7524;
+                font-family: "Alegreya", serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            .middle-text p {
+                width: 25rem;
+            }
+
+            .middle-line1 {
+                /* grid-area: 2 / 1 / 3 / 2; */
+                width: 0;
+                height: 0;
+                background-color: rgb(197, 163, 140);
+            }
+
+            .middle-line2 {
+                /* grid-area: 5 / 1 / 6 / 2; */
+                width: 25rem;
+                height: 10px;
+                background-color: rgb(197, 163, 140);
+            }
+ 
+        } 
+
+        /* cell phones  */
+        @media (max-width: 450px){
+
+            .middle-page-flex {
+                height: auto;
+            }
+
+            .middle-page {
+                display: grid;
+                grid-template-rows: 0.11fr 0.05fr 0.5fr 0.5fr  0.05fr 0.11fr;
+                grid-template-columns: 1fr;
+                gap: 0px;
+            }       
+
+            .leaf-middle1 {
+                display: flex;
+                justify-content: center;
+                grid-area: 1 / 1 / 2 / 2;
+            }
+
+            .leaf-middle2 {
+                display: flex;
+                grid-area: 6 / 1 / 7 / 2;
+                justify-content: center;
+
+            }
+
+            .skate {
+                display: flex;
+                grid-area: 3 / 1 / 4 / 2;
+                justify-content: center;
+
+            }
+
+            .skate img {
+                width: 12rem;
+                border-radius: 5%;
+                margin-top: 15px;
+                margin-bottom: 20px;
+            }
+
+            .leaf-middle1 img {
+                height: 10rem;
+            }
+
+            .leaf-middle2 img {
+                height: 10rem;
+            }
+
+            .middle-text {
+                text-align: center;
+                grid-area: 4 / 1 / 5 / 2;
+                font-size: 1.1rem;
+                margin-top: 0;
+                margin-bottom: 0;
+                color: #8a7524;
+                font-family: "Alegreya", serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            .middle-text p {
+                width: 15rem;
+            }
+
+            .middle-line1 { 
+                /* grid-area: 2 / 1 / 3 / 2; */
+                /* no line */
+                width: 0;
+                height: 0;
+                background-color: rgb(197, 163, 140);
+            }
+
+            .middle-line2 {
+                /* grid-area: 5 / 1 / 6 / 2; */
+                width: 15rem;
+                height: 10px;
+                background-color: rgb(197, 163, 140);
+            }
+        }
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="middle-page-flex">
+        <!-- <div class="middle-page">
+
+        </div> -->
+        <div class="middle-page">
+            <div class="leaf-middle1">
+                <img src="./images/leaf-crop.png" alt="veins of a leaf">
+            </div>
+            <div class="skate">
+                <img src="./images/full_body_lifestyle.jpg" alt="man on roller blades" >  
+                <div class="middle-line1"></div>
+            </div>
+            
+            <div class="middle-text">
+                <div class="middle-line2"></div>
+                <p>
+                    After graduating from Tom Todoroff Acting Conservatory,
+                    I am pursuing film and theater making.
+                </p>
+                <p>
+                    I am also a passionate computer programmer. For last several
+                    years I have been helping students and professionals
+                    implementing models in Python. Recently I jumped into 
+                    web development and I am pleasurably wet.
+                </p>
+                <p>
+                    Rest of my time I spend with my dog and watch tons of films.
+                </p>
+                
+            </div>
+
+            <div class="leaf-middle2">
+                <img src="./images/leaf-crop.png" alt="veins of a leaf">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
